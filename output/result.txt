@@ -1,0 +1,15 @@
+
+Filenames: data/IF.txt and data/Limerick.txt
+
+Number of words in IF.txt = 287
+Number of words in Limerick.txt = 32
+
+Grand Total Words in IF.txt and Limerick.txt = 319
+
+Most occuring words in IF.txt: 
+you: 18 times
+and: 16 times
+if: 14 times
+
+IP Address of my computer: 10.11.185.20
+
