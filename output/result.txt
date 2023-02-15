@@ -1,5 +1,5 @@
 
-Filenames: data/IF.txt and data/Limerick.txt
+Filenames: ['Limerick.txt', 'IF.txt']
 
 Number of words in IF.txt = 287
 Number of words in Limerick.txt = 32

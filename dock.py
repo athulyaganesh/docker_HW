@@ -6,7 +6,9 @@ Author: Athulya Ganesh
 
 import socket 
 import re 
+import os
 
+cwd = os.getcwd() 
 countif=0
 countlim=0
 
@@ -18,8 +20,7 @@ def test(d):
   return ret 
 
 
-with open("data/IF.txt", "r") as f:
-    fif = f.name
+with open(cwd+"/data/IF.txt", "r") as f:
     data = f.read() 
     data = data.strip()
     data = data.lower()
@@ -36,8 +37,7 @@ with open("data/IF.txt", "r") as f:
         
 f.close()
 
-with open("data/Limerick.txt", "r") as f:
-    flim = f.name
+with open(cwd+"/data/Limerick.txt", "r") as f:
     data = f.read() 
     words = data.split() 
     countlim+= len(words)
@@ -45,7 +45,7 @@ f.close()
 
 
 res = open('output/result.txt','w')
-res.writelines("\nFilenames: "+fif+" and "+flim+"\n\n")
+res.writelines("\nFilenames: "+ str(os.listdir(cwd+'/data'))+"\n\n")
 res.writelines("Number of words in IF.txt = "+str(countif)+"\n")
 res.writelines("Number of words in Limerick.txt = "+str(countlim)+"\n\n")
 res.writelines("Grand Total Words in IF.txt and Limerick.txt = "+str(countif+countlim)+"\n\n")
