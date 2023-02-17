@@ -1,10 +1,12 @@
-FROM ubuntu:latest
+FROM python:3.8-alpine as base
 
-RUN apt update
-RUN apt install python3 -y
+FROM base as builder
 
-WORKDIR /home 
+RUN mkdir -p /home
 
-COPY dock.py ./
+WORKDIR /home
 
-CMD ["python3", "dock.py"]
+COPY . /home
+RUN ls -la /
+
+CMD ["python3", "./dock.py"]

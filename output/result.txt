@@ -11,5 +11,5 @@ you: 18 times
 and: 16 times
 if: 14 times
 
-IP Address of my computer: 10.11.185.20
+IP Address of my computer: 10.10.52.106
 
